@@ -87,7 +87,7 @@ class ManifestOutPickup {
             var bagsealsave = yield genericMethod.getValue(this.bagSealNo, 'bagSealNo');
             var filepath = "//Data//" + fileName;
             yield genericMethod.WriteData(bagsealsave, filepath, sheetName, row, column);
-            var c = Bagseal + "Z";
+            var c = Bagseal + "Zz";
             console.log(c);
             yield genericMethod.sendKeys(this.bagSealNo, c, 'bagSealNo');
         });

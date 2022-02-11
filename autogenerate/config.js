@@ -69,17 +69,6 @@ exports.config = {
         "../features/createShipment.feature",
         "../features/loginCE.feature",
         "../features/PickupPRS.feature",
-        "../features/checkinScanPickupBranch.feature",
-        "../features/manifestOutScanPickUp.feature",
-        "../features/manifestInScanPickUpHub.feature",
-        "../features/checkinScanPickupHub.feature",
-        "../features/ManifestOutScanPickupHub.feature",
-        "../features/manifestInScanDeliveryHub.feature",
-        "../features/checkinScanDeliveryHub.feature",
-        "../features/ManifestOutScanDeliveryHub.feature",
-        "../features/manifestInScanDeliveryBranch.feature",
-        "../features/checkinScanDelivery.feature",
-        "../features/updateDRS.feature",
     ],
     jasmineNodeOpts: {
         defaultTimeoutInterval: 900000
