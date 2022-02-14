@@ -81,7 +81,7 @@ export class ManifestOutPickup {
         var bagsealsave = await genericMethod.getValue(this.bagSealNo,'bagSealNo');
         var filepath = "//Data//" + fileName;
         await genericMethod.WriteData(bagsealsave,filepath, sheetName, row, column);
-        var c = Bagseal+"Zz";
+        var c = Bagseal+"Zzr";
         console.log(c);
         await genericMethod.sendKeys(this.bagSealNo, c, 'bagSealNo');
     }
