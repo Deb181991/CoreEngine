@@ -66,7 +66,7 @@ exports.config = {
         //"../features/TransitCage_INOUT.feature",
         // "../features/loginCE.feature",
         ////////////////////////////////////////////////////
-        //"../features/createShipment.feature",
+        //   "../features/createShipment.feature",
         "../features/loginCE.feature",
         "../features/PickupPRS.feature",
         "../features/checkinScanPickupBranch.feature",
