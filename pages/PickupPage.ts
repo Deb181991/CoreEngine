@@ -274,7 +274,7 @@ async uploadpickproof(fileName: string)
 async clickpicksubmit()
 {
 await genericMethod.click(this.submit_btn,'');
-//await genericMethod.click(this.Yes_btn,'');
+await genericMethod.click(this.Yes_btn,'');
 await genericMethod.pause(8000);
   }
 }
