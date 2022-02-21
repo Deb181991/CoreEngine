@@ -1,0 +1,106 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "User can login with valid credentials",
+    "line": 2,
+    "id": "user-can-login-with-valid-credentials",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "uri": "features\\loginTest.feature",
+    "elements": [
+      {
+        "id": "user-can-login-with-valid-credentials;verify-user-can-login-with-valid-credentials-only[ce_log_3]",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify User can login with valid credentials only[CE_LOG_3]",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@loginCE",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\hooks.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Login into Core Engine",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\login.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5328000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Provide the Email 'santosh@esspl.com' in the Email field",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\login.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1536000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Provide the Password 'Test@123' in the Password field",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\login.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1262000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\hooks.js:11"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -6,7 +6,7 @@ Feature: User can login with valid credentials
     Then Login into Core Engine
     And Provide the Email '<UserName>' in the Email field
     And Provide the Password '<Password>' in the Password field
-    When Click on the CE Sign In button
+   # When Click on the CE Sign In button
     #And verify '<pickup>'
 
 
