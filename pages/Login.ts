@@ -33,13 +33,15 @@ async verifyNavigation() {
 
 async enterEmail(userName: string) {
         await genericMethod.sendKeys(this.userName, userName, 'userName');
-        // await genericMethod.clearField(this.userName);
-        // await genericMethod.pause(3000);
+        //await genericMethod.clearField(this.userName);
+        //await genericMethod.pause(3000);
+    
         // var actualValue = "Your PRS PRS/DSML/2111/000322 has been successfully created and assigned to ZURIYATI BINTI ZULKAFLI"
         // var a = actualValue.split(' ');  
         // console.log(a);  
         // await genericMethod.sendKeys(this.userName, a[2], 'userName');
-   
+        await genericMethod.arithmaticlogic();
+        
         
     }
 

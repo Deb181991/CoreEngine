@@ -291,7 +291,7 @@ class PickupPage {
     clickpicksubmit() {
         return __awaiter(this, void 0, void 0, function* () {
             yield genericMethod.click(this.submit_btn, '');
-            //await genericMethod.click(this.Yes_btn,'');
+            yield genericMethod.click(this.Yes_btn, '');
             yield genericMethod.pause(8000);
         });
     }

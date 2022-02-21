@@ -44,12 +44,14 @@ class LoginPage {
     enterEmail(userName) {
         return __awaiter(this, void 0, void 0, function* () {
             yield genericMethod.sendKeys(this.userName, userName, 'userName');
-            // await genericMethod.clearField(this.userName);
-            // await genericMethod.pause(3000);
+            yield genericMethod.clearField(this.userName);
+            yield genericMethod.pause(3000);
+            yield genericMethod.getRandomNumber(5);
             // var actualValue = "Your PRS PRS/DSML/2111/000322 has been successfully created and assigned to ZURIYATI BINTI ZULKAFLI"
             // var a = actualValue.split(' ');  
             // console.log(a);  
             // await genericMethod.sendKeys(this.userName, a[2], 'userName');
+            yield genericMethod.arithmaticlogic();
         });
     }
     Exceldata(fileName, sheetName, rowNum, columnNum) {

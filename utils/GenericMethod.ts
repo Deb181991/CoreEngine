@@ -55,6 +55,7 @@ export class GenericMethod {
         for (var i = 0; i < numberLength; i++)
             randomNumber += possible.charAt(Math.floor(Math.random() * possible.length));
         return randomNumber;
+        console.log(randomNumber);
     };
 
     /**
@@ -772,6 +773,46 @@ async replaceAllSpace(toReplace:string){
                await browser.refresh();
             
         }
+        async arithmaticlogic(){
+
+            var num1 = 10 
+            var num2 = 2
+            var res = 0
+            var TestA = 0
+            var v 
+            
+            //TestA = v
+            TestA = TestA + 10 
+            console.log("Sum:        "+TestA); 
+  
+             //var v = TestA
+           var w = console.log("Value:  "+v) 
+
+
+            res = num1 - num2; 
+            console.log("Difference: "+res) 
+
+            res = num1*num2 
+            console.log("Product:    "+res) 
+
+            res = num1/num2 
+            console.log("Quotient:   "+res)
+            
+            res = num1%num2 
+            console.log("Remainder:   "+res) 
+            
+            
+            //cellData++;
+            //console.log("Value of num1 after increment "+v)
+
+            //cellData-- 
+            //console.log("Value of num2 after decrement "+cellData)
+            //await element.sendKeys(v);
+            
+
+        
+        //return cellData;
+    }   
 
 
         
