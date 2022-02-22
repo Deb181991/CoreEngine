@@ -66,7 +66,9 @@ exports.config = {
         //"../features/TransitCage_INOUT.feature",
         // "../features/loginCE.feature",
         ////////////////////////////////////////////////////
-        "../features/loginTest.feature",
+        //"../features/loginTest.feature",
+        //////////////////////////////////////////////////
+        "../features/createShipment.feature",
     ],
     jasmineNodeOpts: {
         defaultTimeoutInterval: 900000

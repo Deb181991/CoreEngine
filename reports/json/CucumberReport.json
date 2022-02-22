@@ -1,29 +1,29 @@
 [
   {
     "keyword": "Feature",
-    "name": "User can login with valid credentials",
+    "name": "Create a new shipment and calculate charges",
     "line": 2,
-    "id": "user-can-login-with-valid-credentials",
+    "id": "create-a-new-shipment-and-calculate-charges",
     "tags": [
       {
-        "name": "@login",
+        "name": "@createShipment",
         "line": 1
       }
     ],
-    "uri": "features\\loginTest.feature",
+    "uri": "features\\createShipment.feature",
     "elements": [
       {
-        "id": "user-can-login-with-valid-credentials;verify-user-can-login-with-valid-credentials-only[ce_log_3]",
+        "id": "create-a-new-shipment-and-calculate-charges;the-user-should-be-able-to-create-shipment-successfully-for-business-user",
         "keyword": "Scenario",
-        "line": 15,
-        "name": "Verify User can login with valid credentials only[CE_LOG_3]",
+        "line": 13,
+        "name": "The user should be able to Create Shipment successfully for business user",
         "tags": [
           {
-            "name": "@login",
+            "name": "@createShipment",
             "line": 1
           },
           {
-            "name": "@loginCE",
+            "name": "@createShipment1",
             "line": 4
           }
         ],
@@ -37,33 +37,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 3000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "Given ",
             "line": 6,
-            "name": "Login into Core Engine",
+            "name": "Navigate into the OMS website",
             "match": {
-              "location": "autogenerate\\stepdefinitions\\login.js:47"
+              "location": "autogenerate\\stepdefinitions\\login.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 3849000000
+              "duration": 3658000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "Provide the Email 'santosh@esspl.com' in the Email field",
+            "name": "Provide the Email 'shaikhrehan@esspl.com' in the Email field",
             "match": {
               "location": "autogenerate\\stepdefinitions\\login.js:23"
             },
             "result": {
               "status": "passed",
-              "duration": 4802000000
+              "duration": 1706000000
             }
           },
           {
@@ -76,7 +76,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1299000000
+              "duration": 1436000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Click on the Sign In button",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\login.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5359000000
             }
           },
           {
@@ -86,7 +99,8 @@
               "location": "autogenerate\\stepdefinitions\\hooks.js:11"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -98,6 +112,474 @@
             "result": {
               "status": "passed",
               "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-a-new-shipment-and-calculate-charges;verify-create-shipment-for-business-user",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "Verify create shipment for business user",
+        "tags": [
+          {
+            "name": "@createShipment",
+            "line": 1
+          },
+          {
+            "name": "@createShipment2",
+            "line": 15
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\hooks.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Mouse hover on the Bookings option of left navigation bar and click on the Create Shipment option",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10194000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Click on the Next Step button",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9730000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Enter the Company Name 'ABCD' in Delivery Section",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1290000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Enter the Name 'chinu' in Delivery Section",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1292000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Check whether Country 'Malaysia' is displayed in the Country field in Delivery Section",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Enter the Post Code '55555' in Delivery Section",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5576000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Enter the Building or Unit number '50' in Delivery Section",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2476000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Enter the 'BBSR' in the Address field in Delivery Section",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2410000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "user Click on the 'Subang Jaya' select option from it in Delivery Section",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5929000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Enter the Email Id 'abc123@gmail.com' in Delivery Section",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2536000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "Enter the Mobile number '943951168' in Delivery Section",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2431000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Enter the IC number in Delivery Section",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2422000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "Click on the Next Step button",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8405000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "click on 'ST00000050(ST000050)' dropdown and select option from it",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6686000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "Click on the Shipment Type 'Package' dropdown and select option from it",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6664000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Click on the Mode 'Pickup' dropdown and select option from it",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6621000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "fetch waybill number from the waybill number field 'data.xlsx', 'dummy',2,5",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3593000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Click on the Next Step button",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8387000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "Enter the Quantity '1'",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:86"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4702000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "Enter the Weight '10'",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1294000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "Check whether the 'Standard Package' option is displayed in the Packaging Type drop down",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "Enter the Width '5'",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1284000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "Enter the Height '5'",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "Enter the Length '5'",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1312000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "Upload a file by clicking on the Drop Attachment Here file should be uploaded 'profile_pic.png'",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5150000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "Click on the Next Step button",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8302000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "Click on submit button",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:113"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26333000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "Click on close button of the popup",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:116"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3738000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "Mouse hover on the Shipment Management option of left navigation bar and click on it",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:119"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8385000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "click on waybill number field 'data.xlsx', 'dummy', 2,5",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:122"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4602000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "Click on Search button",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:125"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3235000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "verify the status in the 'Order Placed'",
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\createShipment.js:128"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "autogenerate\\stepdefinitions\\hooks.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
             }
           }
         ]
