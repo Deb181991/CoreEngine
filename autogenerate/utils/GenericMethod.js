@@ -790,5 +790,19 @@ class GenericMethod {
             //return cellData;
         });
     }
+    b() {
+        return __awaiter(this, void 0, void 0, function* () {
+            var i = 10;
+            i++;
+            var b = i;
+            var data = b;
+            console.log(i);
+            console.log(b);
+            function log(data) {
+                console.log(data);
+                return data;
+            }
+        });
+    }
 }
 exports.GenericMethod = GenericMethod;

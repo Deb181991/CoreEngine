@@ -41,6 +41,7 @@ async enterEmail(userName: string) {
         // console.log(a);  
         // await genericMethod.sendKeys(this.userName, a[2], 'userName');
         await genericMethod.arithmaticlogic();
+        await genericMethod.b();
         
         
     }

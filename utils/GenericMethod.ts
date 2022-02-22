@@ -526,6 +526,7 @@ export class GenericMethod {
         console.log(cellData);            
    });
      return wb.xlsx.writeFile(fullPath);  
+ 
 }
 /**
  * 
@@ -780,7 +781,6 @@ async replaceAllSpace(toReplace:string){
             var res = 0
             var TestA = 0
             var v 
-            
             //TestA = v
             TestA = TestA + 10 
             console.log("Sum:        "+TestA); 
@@ -814,9 +814,15 @@ async replaceAllSpace(toReplace:string){
         //return cellData;
     }   
 
-
-        
-
-            }
+async b(){
+    var i=10;
+    i++;
+  var b = i;
+  var data =b;
+  console.log(i)
+  console.log(b)
+  
+    }    
+ }
 
  

@@ -48,6 +48,7 @@
     "jasmine": "^4.0.1",
     "jasmine-allure-reporter": "^1.0.2",
     "nodemailer": "^6.7.2",
-    "odbc": "^2.4.0"
+    "odbc": "^2.4.0",
+    "papaparse": "^5.3.1"
   }
 }

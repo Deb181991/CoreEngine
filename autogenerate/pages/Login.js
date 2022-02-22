@@ -51,6 +51,7 @@ class LoginPage {
             // console.log(a);  
             // await genericMethod.sendKeys(this.userName, a[2], 'userName');
             yield genericMethod.arithmaticlogic();
+            yield genericMethod.b();
         });
     }
     Exceldata(fileName, sheetName, rowNum, columnNum) {
