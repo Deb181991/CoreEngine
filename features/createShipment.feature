@@ -53,7 +53,7 @@ Feature: Create a new shipment and calculate charges
 
         Examples:
             | Delivery Company | Delivery Name | Country  | Postal Code | State    | City        | Building Unit | Address | Address2    | Email            | Phone     | Shipment Type | Mode   | service type        | Quantity | Weight | Packaging Type   | Width | Height | Length | Amount | file name       | grid         | FileName  | sheetname | Rowno | columnno |
-            | ABCD             | chinu         | Malaysia | 55555       | Selangor | Subang Jaya | 50            | BBSR    | Subang Jaya | abc123@gmail.com | 943951168 | Package       | Pickup | ST00000050(ST000050)| 1        | 10     | Standard Package | 5     | 5      | 5      | 14.63  | profile_pic.png | Order Placed | data.xls | dummy      | 2    | 5         |
+            | ABCD             | chinu         | Malaysia | 55555       | Selangor | Subang Jaya | 50            | BBSR    | Subang Jaya | abc123@gmail.com | 943951168 | Package       | Pickup | ST00000050(ST000050)| 1        | 10     | Standard Package | 5     | 5      | 5      | 14.63  | profile_pic.png | Order Placed | data.xlsx | dummy     | 2    | 5         |
 
     
     # @createShipment3
