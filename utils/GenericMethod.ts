@@ -525,8 +525,7 @@ export class GenericMethod {
         cellData = await cellObject.value;            
         console.log(cellData);            
    });
-     return wb.xlsx.writeFile(fullPath);  
- 
+     return wb.xlsx.writeFile(fullPath);
 }
 /**
  * 
@@ -556,7 +555,43 @@ async Increment(filePath: string, sheetName: string, rowNum: number, columnNum: 
       });
     return cellData;
     }   
+
+    async Increment2(){
+            var fs = require('fs');
+            var csvModule = require('papaparse')
+            var wb = new Workbook()
+            var filePath = "./Data/CSVData.csv";
+    //         var cellData;
+    //         //var d = fs.readFileSync("E:\\Testing\\My-Script\\CoreEngine\\Data\\CSVData.csv", 'utf8')
+    // /////////////////////
+    //     await wb.csv.readFile(filePath).then(async () => {
+    //     var Worksheet = await wb.getWorksheet("CSVData");
+    //    // var Row = await Worksheet.getRow(1);
+    //     // let cellObject: Cell = await rowObject.getCell(1);
+    //     // cellData = await cellObject.value;
+    //     console.log(Row);
+        
+    //    //cellData++; 
+    // //cellData--; 
+    //    console.log("Value of num2 after decrement "+cellData)
     
+    //   });
+        
+    // ///////////////////////
+    
+            var d = fs.readFileSync(filePath, 'utf8')
+            console.log(d);
+            //console.log(wb.getWorksheet("CSVData").getRow(1).getCell(1).value)
+            csvModule.parse(d,{
+                   complete:(csvValues)=>{
+                     console.log(csvValues)
+                     console.log("************************")
+                     console.log(csvValues.data[1][2])
+                   }gggg
+        })
+        }   
+      
+
     /**
      * Get current window url
      * @returns url
@@ -823,6 +858,21 @@ async b(){
   console.log(b)
   
     }    
+
+    async csv(){
+        const papa = require('papaparse');
+	const fs = require('fs');
+	const file = fs.readFileSync('D:Pathabc.csv', 'utf8');
+
+	papa.parse(file, {
+		complete: (result) =>{
+			console.log("@@@@@ Complete CSV file : "+result.data)
+			console.log("###### row: "+result.data[0])
+			console.log("****** value in a row: "+result.data[0][2])
+		}
+	});
+
+    }
  }
 
  

@@ -538,6 +538,38 @@ class GenericMethod {
             return cellData;
         });
     }
+    Increment2() {
+        return __awaiter(this, void 0, void 0, function* () {
+            var fs = require('fs');
+            var csvModule = require('papaparse');
+            var wb = new exceljs_1.Workbook();
+            var filePath = "./Data/CSVData.csv";
+            var cellData;
+            //var d = fs.readFileSync("E:\\Testing\\My-Script\\CoreEngine\\Data\\CSVData.csv", 'utf8')
+            /////////////////////
+            yield wb.csv.readFile(filePath).then(() => __awaiter(this, void 0, void 0, function* () {
+                var Worksheet = yield wb.getWorksheet("CSVData");
+                var Row = yield Worksheet.getRow(1);
+                // let cellObject: Cell = await rowObject.getCell(1);
+                // cellData = await cellObject.value;
+                console.log(Row);
+                //cellData++; 
+                //cellData--; 
+                console.log("Value of num2 after decrement " + cellData);
+            }));
+            ///////////////////////
+            //     var d = fs.readFileSync(filePath, 'utf8')
+            //     console.log(d);
+            //     //console.log(wb.getWorksheet("CSVData").getRow(1).getCell(1).value)
+            //     csvModule.parse(d,{
+            //            complete:(csvValues)=>{
+            //              console.log(csvValues)
+            //              console.log("************************")
+            //              console.log(csvValues.data[1])
+            //            }
+            // })
+        });
+    }
     /**
      * Get current window url
      * @returns url
@@ -798,10 +830,20 @@ class GenericMethod {
             var data = b;
             console.log(i);
             console.log(b);
-            function log(data) {
-                console.log(data);
-                return data;
-            }
+        });
+    }
+    csv() {
+        return __awaiter(this, void 0, void 0, function* () {
+            const papa = require('papaparse');
+            const fs = require('fs');
+            const file = fs.readFileSync('D:Pathabc.csv', 'utf8');
+            papa.parse(file, {
+                complete: (result) => {
+                    console.log("@@@@@ Complete CSV file : " + result.data);
+                    console.log("###### row: " + result.data[0]);
+                    console.log("****** value in a row: " + result.data[0][2]);
+                }
+            });
         });
     }
 }
