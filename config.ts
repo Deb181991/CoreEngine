@@ -70,7 +70,11 @@ export const config: Config = {
        //"../features/TransitCage_INOUT.feature",
       // "../features/loginCE.feature",
        ////////////////////////////////////////////////////
+<<<<<<< HEAD
        //"../features/loginTest.feature",
+=======
+      // "../features/loginTest.feature",
+>>>>>>> f876eee7bb64b5a24a8bdd2dcffcac2d57ba8353
        //////////////////////////////////////////////////
          "../features/createShipment.feature",
             "../features/loginCE.feature",
