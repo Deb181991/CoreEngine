@@ -85,7 +85,7 @@ export const config: Config = {
            "../features/ManifestOutScanDeliveryHub.feature",
             "../features/manifestInScanDeliveryBranch.feature",
            "../features/checkinScanDelivery.feature",
-          "../features/updateDRS.featureaa",
+          "../features/updateDRS.feature",
 
     ],
         
