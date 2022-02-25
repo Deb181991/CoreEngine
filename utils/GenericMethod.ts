@@ -559,36 +559,19 @@ async Increment(filePath: string, sheetName: string, rowNum: number, columnNum: 
     async Increment2(){
             var fs = require('fs');
             var csvModule = require('papaparse')
-            var wb = new Workbook()
             var filePath = "./Data/CSVData.csv";
-    //         var cellData;
-    //         //var d = fs.readFileSync("E:\\Testing\\My-Script\\CoreEngine\\Data\\CSVData.csv", 'utf8')
-    // /////////////////////
-    //     await wb.csv.readFile(filePath).then(async () => {
-    //     var Worksheet = await wb.getWorksheet("CSVData");
-    //    // var Row = await Worksheet.getRow(1);
-    //     // let cellObject: Cell = await rowObject.getCell(1);
-    //     // cellData = await cellObject.value;
-    //     console.log(Row);
-        
-    //    //cellData++; 
-    // //cellData--; 
-    //    console.log("Value of num2 after decrement "+cellData)
-    
-    //   });
-        
-    // ///////////////////////
-    
+            var cellData;
+    // /////////////////////// 
             var d = fs.readFileSync(filePath, 'utf8')
-            console.log(d);
-            //console.log(wb.getWorksheet("CSVData").getRow(1).getCell(1).value)
-            csvModule.parse(d,{
+                csvModule.parse(d,{
                    complete:(csvValues)=>{
-                     console.log(csvValues)
                      console.log("*************************")
-                     console.log(csvValues.data[1][2])
-                   }
-        })
+                     cellData =  csvValues.data[1][2]
+                     console.log(" celldata value before increment "+cellData)
+                     cellData++;
+                     console.log("Value of num2 after decrement "+cellData)
+                }
+             })
         }   
       
 

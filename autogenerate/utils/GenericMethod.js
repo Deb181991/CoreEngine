@@ -542,32 +542,20 @@ class GenericMethod {
         return __awaiter(this, void 0, void 0, function* () {
             var fs = require('fs');
             var csvModule = require('papaparse');
-            var wb = new exceljs_1.Workbook();
             var filePath = "./Data/CSVData.csv";
             var cellData;
-            //var d = fs.readFileSync("E:\\Testing\\My-Script\\CoreEngine\\Data\\CSVData.csv", 'utf8')
-            /////////////////////
-            yield wb.csv.readFile(filePath).then(() => __awaiter(this, void 0, void 0, function* () {
-                var Worksheet = yield wb.getWorksheet("CSVData");
-                var Row = yield Worksheet.getRow(1);
-                // let cellObject: Cell = await rowObject.getCell(1);
-                // cellData = await cellObject.value;
-                console.log(Row);
-                //cellData++; 
-                //cellData--; 
-                console.log("Value of num2 after decrement " + cellData);
-            }));
-            ///////////////////////
-            //     var d = fs.readFileSync(filePath, 'utf8')
-            //     console.log(d);
-            //     //console.log(wb.getWorksheet("CSVData").getRow(1).getCell(1).value)
-            //     csvModule.parse(d,{
-            //            complete:(csvValues)=>{
-            //              console.log(csvValues)
-            //              console.log("************************")
-            //              console.log(csvValues.data[1])
-            //            }
-            // })
+            // /////////////////////// 
+            var d = fs.readFileSync(filePath, 'utf8');
+            csvModule.parse(d, {
+                complete: (csvValues) => {
+                    console.log("*************************");
+                    cellData = csvValues.data[1][2];
+                    console.log(" celldata value before increment " + cellData);
+                    cellData++;
+                    console.log("Value of num2 after decrement " + cellData);
+                }
+            });
+            return fs.writefile("E:\\Testing\\My-Script\\CoreEngine\\Data\\DataCSV2.csv", cellData);
         });
     }
     /**
