@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastPrinted>1899-12-30T00:00:00Z</LastPrinted>
+  <Created>2007-05-17T11:32:03Z</Created>
+  <LastSaved>2022-02-23T04:23:37Z</LastSaved>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <RemovePersonalInformation/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8325</WindowHeight>
+  <WindowWidth>19920</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s16">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s17">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="dummy">
+  <Table ss:ExpandedColumnCount="21" ss:ExpandedRowCount="4" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="97.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="69"/>
+   <Column ss:AutoFitWidth="0" ss:Width="97.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Debadatta</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Bag Seal Number</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">UserID</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Password</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">BU Waybill Number</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">BU Rate Chart</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">PU Waybill Number</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">PU Rate Chart</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Offline Waybill Lodgin</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">ManifestNumber</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">ManifestNumber</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Pu Number</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">PRS number</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">BagsealNumberPickup</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">BagsealNumberPickuphub</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">BagsealNumberDeliveryHub</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s16"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">433</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">santosh@esspl.com</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Test@123</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">ZND164544219936</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s16"><Data ss:Type="Number">138</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">MF/DSML/2112/003437</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">MF/DSML/2112/003438</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">PU/DSML/2202/000072</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">PRS/DSML/2202/000093</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">431Zzr</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">432Zzr</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">433Zzr</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">DRS/DSML/2202/000141</Data></Cell>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s16"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+    <Cell ss:StyleID="s17"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:StartPageNumber="1"/>
+    <Header x:Margin="0.51180555555555551"/>
+    <Footer x:Margin="0.51180555555555551"/>
+    <PageMargins x:Bottom="0.98402777777777772" x:Left="0.74791666666666667"
+     x:Right="0.74791666666666667" x:Top="0.98402777777777772"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <FitWidth>0</FitWidth>
+    <FitHeight>0</FitHeight>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>256</PaperSizeIndex>
+    <HorizontalResolution>-1</HorizontalResolution>
+    <VerticalResolution>-1</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

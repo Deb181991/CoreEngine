@@ -12,6 +12,6 @@ Feature: User can login with valid credentials
 
     Examples:
       | UserName         | Password | File Name | Sheet Name   | Row Num | Column Num |pickup|
-      | santosh@esspl.com | Test@123 | data.xlsx | dummy        | 3       | 2          |Pickup|
+      | santosh@esspl.com| Test@123 | data.xlsx | dummy        | 3       | 2          |Pickup|
             
             

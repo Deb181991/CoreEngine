@@ -490,10 +490,8 @@ export class GenericMethod {
      */
     async getExcelData(filePath: string, sheetName: string, rowNum: number, columnNum: number) {
             var wb: Workbook = new Workbook();
-            //var fullPath = process.cwd() + filePath;
             var fullPath = process.cwd() + filePath;
             var cellData;
-
             console.log('Reading file data');
             await wb.xlsx.readFile(fullPath).then(async () => {
                 let sheet: Worksheet = await wb.getWorksheet(sheetName);
@@ -557,23 +555,73 @@ async Increment(filePath: string, sheetName: string, rowNum: number, columnNum: 
     }   
 
     async Increment2(){
+    
             var fs = require('fs');
             var csvModule = require('papaparse')
             var filePath = "./Data/CSVData.csv";
             var cellData;
-    // /////////////////////// 
             var d = fs.readFileSync(filePath, 'utf8')
+            //var d = fs.readFile(filePath)
                 csvModule.parse(d,{
                    complete:(csvValues)=>{
                      console.log("*************************")
                      cellData =  csvValues.data[1][2]
-                     console.log(" celldata value before increment "+cellData)
                      cellData++;
                      console.log("Value of num2 after decrement "+cellData)
-                }
+                }   
              })
+             return cellData
         }   
       
+     async WriteIncrement2(actualValue: string){
+            var fs = require('fs');
+            var csvModule = require('papaparse')
+            var filePath = "./Data/CSVData.csv";
+            var cellData;
+            var str = "saregama"
+            fs.writeFileSync("./Data/CSVData12.csv",str)
+        }   
+    
+        ////////////////////////////////////////////////////////
+        async ReadExcel(){
+            var fs = require('fs');
+            var wb: Workbook = new Workbook();
+            var filePath = "./Data/CSVData12.csv";
+            //var d = fs.readFile(filePath)
+            //var fullPath = process.cwd() + filePath;
+            var cellData;
+    fs.readFileSync(filePath).then(function(){
+        console.log(wb.getWorksheet("dummy").getRow(3).getCell(4).value)
+    })
+    
+            // await wb.csv.readFile(filePath).then(async (actualValue) => {
+    //     var W = wb.getWorksheet("dummy").getRow(3).getCell(4).value;
+    // // let sheet: Worksheet = await wb.getWorksheet("dummy");
+    // // let rowObject: Row = await sheet.getRow(3);
+    // // let cellObject: Cell = await rowObject.getCell(4);
+    // // cellData = await cellObject.value;
+    // console.log("@@@@@@@@@@@@@"+W);
+    
+    //cellData++; 
+    //cellData--; 
+    //console.log("Value of num2 after decrement "+cellData)
+    
+    //  });
+   // return cellData;
+  
+            }
+        
+        async WriteExcel(actualValue){
+                    
+                    var path = "./Data/CSVData12.csv";  
+                    var wb = new Workbook();
+                    var W = wb.addWorksheet("dummy").getRow(6).getCell(7);
+                    W.value = await actualValue;
+                    await wb.csv.writeFile( path );               
+                }
+        ///////////////////////////////////////////////////////
+    
+
 
     /**
      * Get current window url

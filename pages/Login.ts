@@ -40,9 +40,17 @@ async enterEmail(userName: string) {
         // console.log(a);  
         // await genericMethod.sendKeys(this.userName, a[2], 'userName');
         //await genericMethod.arithmaticlogic();
-        var c=  await genericMethod.Increment2();
-        //await genericMethod.sendKeys(this.userName,c,'')
-        
+        var D =  await genericMethod.Increment2();
+        await genericMethod.sendKeys(this.userName,D,'');
+        //await genericMethod.click(this.userName,'');
+        //var c = await genericMethod.getValue(this.userName,'');
+        //await genericMethod.CombineIncrement2();
+        //await genericMethod.WriteIncrement2()
+        //await genericMethod.WriteExcel(c)
+        await genericMethod.clearField(this.userName);
+        await genericMethod.pause(3000); 
+       var d = await genericMethod.ReadExcel();
+       console.log(d);
     }
 
 async Exceldata(fileName: string, sheetName: string, rowNum: number, columnNum: number){

@@ -51,8 +51,17 @@ class LoginPage {
             // console.log(a);  
             // await genericMethod.sendKeys(this.userName, a[2], 'userName');
             //await genericMethod.arithmaticlogic();
-            var c = yield genericMethod.Increment2();
-            //await genericMethod.sendKeys(this.userName,c,'')
+            var D = yield genericMethod.Increment2();
+            yield genericMethod.sendKeys(this.userName, D, '');
+            //await genericMethod.click(this.userName,'');
+            //var c = await genericMethod.getValue(this.userName,'');
+            //await genericMethod.CombineIncrement2();
+            //await genericMethod.WriteIncrement2()
+            //await genericMethod.WriteExcel(c)
+            yield genericMethod.clearField(this.userName);
+            yield genericMethod.pause(3000);
+            var d = yield genericMethod.ReadExcel();
+            console.log(d);
         });
     }
     Exceldata(fileName, sheetName, rowNum, columnNum) {
