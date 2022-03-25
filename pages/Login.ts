@@ -19,6 +19,8 @@ export class LoginPage {
     ManagePrs = element(by.xpath('//span[contains(text(),"Manage PRS")]'));
     Pickup_request=element(by.xpath('//div[contains(text(),"Pickup Request")]'));
     Assigned =element(by.xpath('(//div[contains(@class,"mat-tab-label-content")])[4]'));
+    Signin = element(by.xpath('//h3[contains(text(),"Sign In")]'));
+    
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 async launchUrl() {
@@ -33,25 +35,9 @@ async verifyNavigation() {
 
 async enterEmail(userName: string) {
         await genericMethod.sendKeys(this.userName, userName, 'userName');
-        await genericMethod.clearField(this.userName);
-        await genericMethod.pause(3000);    
-        // var actualValue = "Your PRS PRS/DSML/2111/000322 has been successfully created and assigned to ZURIYATI BINTI ZULKAFLI"
-        // var a = actualValue.split(' ');  
-        // console.log(a);  
-        // await genericMethod.sendKeys(this.userName, a[2], 'userName');
-        //await genericMethod.arithmaticlogic();
-        var D =  await genericMethod.Increment2();
-        await genericMethod.sendKeys(this.userName,D,'');
-        //await genericMethod.click(this.userName,'');
-        //var c = await genericMethod.getValue(this.userName,'');
-        //await genericMethod.CombineIncrement2();
-        //await genericMethod.WriteIncrement2()
-        //await genericMethod.WriteExcel(c)
-        await genericMethod.clearField(this.userName);
-        await genericMethod.pause(3000); 
-       var d = await genericMethod.ReadExcel();
-       console.log(d);
-    }
+        // await genericMethod.clearField(this.userName);
+        // await genericMethod.pause(3000);    
+        }
 
 async Exceldata(fileName: string, sheetName: string, rowNum: number, columnNum: number){
         await genericMethod.clearField(this.userName);
@@ -127,7 +113,14 @@ async CEclickSubmit(){
     await assertions.verifyEquals(p,pickup);
     
   }
-  
+async verifySignIn(un:string){
+
+    const Actual= element(by.xpath('//h3[contains(text(),"'+ un +'")]'));
+    console.log(Actual);
+    const isDisplayed = await assertions.verifyElementDisplayed(Actual, un);
+    await assertions.verifyConditionIsTrue(isDisplayed);
+
+}  
 
 }
 

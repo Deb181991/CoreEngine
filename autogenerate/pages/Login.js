@@ -27,6 +27,7 @@ class LoginPage {
         this.ManagePrs = protractor_1.element(protractor_1.by.xpath('//span[contains(text(),"Manage PRS")]'));
         this.Pickup_request = protractor_1.element(protractor_1.by.xpath('//div[contains(text(),"Pickup Request")]'));
         this.Assigned = protractor_1.element(protractor_1.by.xpath('(//div[contains(@class,"mat-tab-label-content")])[4]'));
+        this.Signin = protractor_1.element(protractor_1.by.xpath('//h3[contains(text(),"Sign In")]'));
     }
     ///////////////////////////////////////////////////////////////////////////////////////////////
     launchUrl() {
@@ -44,24 +45,8 @@ class LoginPage {
     enterEmail(userName) {
         return __awaiter(this, void 0, void 0, function* () {
             yield genericMethod.sendKeys(this.userName, userName, 'userName');
-            yield genericMethod.clearField(this.userName);
-            yield genericMethod.pause(3000);
-            // var actualValue = "Your PRS PRS/DSML/2111/000322 has been successfully created and assigned to ZURIYATI BINTI ZULKAFLI"
-            // var a = actualValue.split(' ');  
-            // console.log(a);  
-            // await genericMethod.sendKeys(this.userName, a[2], 'userName');
-            //await genericMethod.arithmaticlogic();
-            var D = yield genericMethod.Increment2();
-            yield genericMethod.sendKeys(this.userName, D, '');
-            //await genericMethod.click(this.userName,'');
-            //var c = await genericMethod.getValue(this.userName,'');
-            //await genericMethod.CombineIncrement2();
-            //await genericMethod.WriteIncrement2()
-            //await genericMethod.WriteExcel(c)
-            yield genericMethod.clearField(this.userName);
-            yield genericMethod.pause(3000);
-            var d = yield genericMethod.ReadExcel();
-            console.log(d);
+            // await genericMethod.clearField(this.userName);
+            // await genericMethod.pause(3000);    
         });
     }
     Exceldata(fileName, sheetName, rowNum, columnNum) {
@@ -145,6 +130,14 @@ class LoginPage {
         return __awaiter(this, void 0, void 0, function* () {
             var p = yield genericMethod.getText(this.Pickup, '');
             yield assertions.verifyEquals(p, pickup);
+        });
+    }
+    verifySignIn(un) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const Actual = protractor_1.element(protractor_1.by.xpath('//h3[contains(text(),"' + un + '")]'));
+            console.log(Actual);
+            const isDisplayed = yield assertions.verifyElementDisplayed(Actual, un);
+            yield assertions.verifyConditionIsTrue(isDisplayed);
         });
     }
 }

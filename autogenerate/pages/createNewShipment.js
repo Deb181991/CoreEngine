@@ -346,5 +346,13 @@ class CreateNewShipmentPage {
             const sheet = yield genericMethod.WriteData(waybill, filepath, sheetName, row, column);
         });
     }
+    verifyTypeofService(VTOS) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const actualResult = protractor_1.element(protractor_1.by.xpath('//div[contains(text(),"' + VTOS + '")]'));
+            console.log(actualResult);
+            const isDisplayed = yield assertions.verifyElementDisplayed(actualResult, VTOS);
+            yield assertions.verifyConditionIsTrue(isDisplayed);
+        });
+    }
 }
 exports.CreateNewShipmentPage = CreateNewShipmentPage;

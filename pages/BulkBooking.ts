@@ -87,10 +87,18 @@ export class BulkBookingPage {
 
     async verifyTotalAmount(expectedAmount) {
         var totalElement = element(by.xpath(`//span[text()="${expectedAmount}"]`))
+        //var totalElement = element(by.xpath(`//span[text()="${}"]`))
         await genericMethod.waitForElementToBeVisible(totalElement, expectedAmount)
         const actualAmount = await genericMethod.getText(this.totalAmount, 'totalAmount');
         await assertions.verifyEquals(expectedAmount, actualAmount)
     }
+    /*async verifyTypeofService(expectedText) {
+        var expectedResult = element(by.xpath(`//div[text()="${expectedText}"]`));
+        await genericMethod.waitForElementToBeVisible(expectedResult, expectedText)
+        const actualText = await genericMethod.getText(this., 'Types of Services');
+       console.log(actualText);
+       await assertions.verifyEquals(expectedText,actualText);
+   }*/
 
     async clickPayButton() {
         await genericMethod.waitForElementToBeInvisible(this.waitSpinner, 'waitSpinner');

@@ -295,6 +295,12 @@ async clickOnBooking() {
     }
 
 
-    
+    async verifyTypeofService(VTOS:string) {
+        const actualResult = element(by.xpath('//div[contains(text(),"'+ VTOS +'")]'));
+        console.log(actualResult);
+        const isDisplayed = await assertions.verifyElementDisplayed(actualResult, VTOS);
+        await assertions.verifyConditionIsTrue(isDisplayed);
+    }
+
     
 }

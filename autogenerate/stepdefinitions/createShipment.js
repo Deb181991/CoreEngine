@@ -145,3 +145,7 @@ cucumber_1.Given('select bank from the dropdown {string}', { timeout: genericMet
 cucumber_1.Given('click on proceed with bank button', { timeout: genericMethod.defaultTestTimeout }, () => __awaiter(void 0, void 0, void 0, function* () {
     yield shipment.clickOnProceed();
 }));
+cucumber_1.Then('user should displayed to {string} page', { timeout: genericMethod.defaultTestTimeout }, (VTOS) => __awaiter(void 0, void 0, void 0, function* () {
+    //await shipment.clickonBank();
+    yield shipment.verifyTypeofService(VTOS);
+}));

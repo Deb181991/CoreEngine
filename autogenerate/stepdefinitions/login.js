@@ -53,3 +53,6 @@ cucumber_1.Then('Check the waybill {string},{string},{int},{int}', { timeout: ge
 cucumber_1.Then('write outcome data {string},{string},{int},{int}', { timeout: genericMethod.defaultTestTimeout }, (fileName, sheetName, rowNum, columnNum) => __awaiter(void 0, void 0, void 0, function* () {
     yield login.WriteData(fileName, sheetName, rowNum, columnNum);
 }));
+cucumber_1.Then('{string} should be displayed', { timeout: 150 * 1000 }, (un) => __awaiter(void 0, void 0, void 0, function* () {
+    yield login.verifySignIn(un);
+}));

@@ -53,3 +53,7 @@ Then('Check the waybill {string},{string},{int},{int}',{ timeout: genericMethod.
 Then('write outcome data {string},{string},{int},{int}',{ timeout: genericMethod.defaultTestTimeout } ,async ( fileName , sheetName, rowNum, columnNum ) => {
     await login.WriteData(fileName , sheetName, rowNum, columnNum);
 });
+
+Then('{string} should be displayed', { timeout: 150 * 1000 }, async (un) => {
+    await login.verifySignIn(un);
+});

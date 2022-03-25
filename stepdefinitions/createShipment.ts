@@ -205,3 +205,7 @@ Given('click on pay button',  {timeout: genericMethod.defaultTestTimeout }, asyn
 Given('click on proceed with bank button', {timeout: genericMethod.defaultTestTimeout }, async () => {
     await shipment.clickOnProceed();
 });
+Then('user should displayed to {string} page', {timeout: genericMethod.defaultTestTimeout }, async (VTOS) => {
+  //await shipment.clickonBank();
+  await shipment.verifyTypeofService(VTOS);
+});

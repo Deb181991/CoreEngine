@@ -102,11 +102,19 @@ class BulkBookingPage {
     verifyTotalAmount(expectedAmount) {
         return __awaiter(this, void 0, void 0, function* () {
             var totalElement = protractor_1.element(protractor_1.by.xpath(`//span[text()="${expectedAmount}"]`));
+            //var totalElement = element(by.xpath(`//span[text()="${}"]`))
             yield genericMethod.waitForElementToBeVisible(totalElement, expectedAmount);
             const actualAmount = yield genericMethod.getText(this.totalAmount, 'totalAmount');
             yield assertions.verifyEquals(expectedAmount, actualAmount);
         });
     }
+    /*async verifyTypeofService(expectedText) {
+        var expectedResult = element(by.xpath(`//div[text()="${expectedText}"]`));
+        await genericMethod.waitForElementToBeVisible(expectedResult, expectedText)
+        const actualText = await genericMethod.getText(this., 'Types of Services');
+       console.log(actualText);
+       await assertions.verifyEquals(expectedText,actualText);
+   }*/
     clickPayButton() {
         return __awaiter(this, void 0, void 0, function* () {
             yield genericMethod.waitForElementToBeInvisible(this.waitSpinner, 'waitSpinner');
